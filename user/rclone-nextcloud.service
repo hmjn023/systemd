@@ -1,0 +1,12 @@
+[Unit]
+Description=mount nextcloud with rclone
+After=remote-fs.target
+
+[Service]
+Type=simple
+ExecStart=/home/hmjn/.local/share/systemd/user/rclone/start.sh
+ExecReload=/home/hmjn/.local/share/systemd/user/rclone/restart.sh
+ExecStop=/home/hmjn/.local/share/systemd/user/rclone/stop.sh
+
+[Install]
+WantedBy=default.target
