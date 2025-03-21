@@ -1,0 +1,10 @@
+[Unit]
+Description=Run NextCloud cron.php
+
+[Service]
+Type=oneshot
+ExecStart=/home/hmjn/.local/share/systemd/user/cron/cron.sh
+
+[Install]
+WantedBy=multi-user.target
+

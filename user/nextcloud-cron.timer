@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for NextCloud cron.php
+
+[Timer]
+OnCalendar=*:0/5
+Persistent=true
+
+[Install]
+WantedBy=nextcloud-cron.target
+
